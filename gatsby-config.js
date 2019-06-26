@@ -2,8 +2,10 @@ module.exports = {
   siteMetadata: {
     title: 'Level Up Blog',
     description: 'A new blog!',
+    siteUrl: 'https://sharp-jang-e7f473.netlify.com',
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
@@ -36,6 +38,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }
