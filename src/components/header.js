@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import logo from '../images/logo.svg'
+import logo from '../images/logo-5.svg'
 
 const HeaderWrapper = styled.div`
-  background: #524763;
+  background: #E0E0E0;
+  border-bottom: 5px solid red;
   img {
     margin-bottom: 0;
   }

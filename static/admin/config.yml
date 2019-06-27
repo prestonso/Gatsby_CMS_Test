@@ -3,15 +3,39 @@ backend:
   branch: master
   repo: notaduck/Gatsby_CMS_Test
 
-media_folder: static/img
-public_folder: /img
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
-  - name: 'team'
-    label: 'Team'
-    folder: 'src/team'
+  - name: "posts"
+    label: "Posts"
+    folder: "src/posts"
     create: true
-    slug: '{{slug}}'
+    slug: "{{year}}-{{slug}}"
     fields:
-      - { label: 'Team Member', name: 'title', widget: 'string' }
-      - { label: 'Bio', name: 'bio', widget: 'markdown' }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: Type, name: type, widget: hidden, default: "post"}
+      - {label: Slug, name: slug, widget: hidden, default: "{{year}}-{{slug}}"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+
+# collections:
+#   - name: 'team'
+#     label: 'Team'
+#     folder: 'src/team'
+#     create: true
+#     fields:
+#       - { label: 'Team Member', name: 'title', widget: 'string' }
+#       - { label: 'Path', name: 'slug', widget: 'string' }
+#       - { label: 'Bio', name: 'bio', widget: 'markdown' }
+
+#   - name: 'post'
+#     label: 'post'
+#     folder: './src/posts'
+#     create: true
+#     edit: true
+#     slug: '{{slug}}'
+#     fields:
+#       - { label: 'Title', name: 'title', widget: 'string' }
+#       - { label: 'Content', name: 'content', widget: 'markdown' }
