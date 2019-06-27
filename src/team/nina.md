@@ -1,5 +1,0 @@
----
-title: Nina
-bio: asd
----
-
