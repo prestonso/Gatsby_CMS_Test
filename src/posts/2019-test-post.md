@@ -15,6 +15,8 @@ slug: '{{year}}-{{slug}}'
 ---
 # This is a simple test post
 
-
-
 Hej med dig æøå
+
+
+
+![](/uploads/wallhaven-zmoxry.jpg)
