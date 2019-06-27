@@ -1,5 +1,0 @@
----
-title: asd
-bio: asd
----
-
